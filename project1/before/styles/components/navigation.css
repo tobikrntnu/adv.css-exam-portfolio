@@ -1,0 +1,32 @@
+.header, .footer {
+  font-family: var(--font);
+  background-color: var(--color-primary, grey);
+  text-align: center;
+  padding: var(--padding-large) 0 var(--padding-large) 0;
+  color: var(--textcolor-secondary);
+}
+.header__title, .footer__title {
+  font-size: var(--header1);
+}
+.header__navigation .footer__list, .footer__navigation .footer__list {
+  list-style: none;
+  display: inline-flex;
+}
+.header__navigation .footer__list .footer__item, .footer__navigation .footer__list .footer__item {
+  -webkit-margin-after: var(--margin-small);
+          margin-block-end: var(--margin-small);
+}
+.header__navigation .footer__list .footer__item a, .footer__navigation .footer__list .footer__item a {
+  padding: 0.7em;
+  background-color: var(--color-secondary, blue);
+  color: var(--color-tertiary, white);
+  text-decoration: none;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin: var(--margin-small);
+}
+.header__navigation .footer__list .footer__item a:hover, .footer__navigation .footer__list .footer__item a:hover {
+  background-color: var(--color-secondary-hover);
+  color: var(--color-tertiary, white);
+}
+/*# sourceMappingURL=navigation.css.map */

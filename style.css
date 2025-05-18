@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1em;
+  box-shadow: 0 0 1em black;
+}
+
+a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5em;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #004d99;
+}
+
+.reflection {
+    margin: 1em 0.5em 0 0.5em;
+}
+.project {
+    text-align: center;
+    gap: 0.5em;
+    margin: 1em 0.5em 1em 0.5em;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 50% auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}

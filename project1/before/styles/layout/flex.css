@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+cover-l {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 30vh;
+}
+
+stack-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/*# sourceMappingURL=flex.css.map */

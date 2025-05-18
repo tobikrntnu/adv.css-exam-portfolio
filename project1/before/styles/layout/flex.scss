@@ -1,0 +1,30 @@
+
+// styling the header
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+// I copied this code from the "Every Layout" website, and decided not to move the
+// flex properties to make it easier to show what part is taken from the website.
+cover-l {
+    display: flex;
+    flex-direction: column;
+    // I had to change this from 100, because the section underneath got pushed further down when resizing the 
+    // screen size, and it left a lot of white space
+    min-block-size: 30vh;
+    //padding: var(--s1);
+  }
+
+// this is copied from "Every Layout"
+// I have also not separated the flex elements from the rest to make it easier to see what has been
+// copied and put in.
+stack-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  // this was a part of the code, but I did not find a use for it, so 
+// stack-l > * + * {
+  // margin-block-start: var(--margin-xsmall);
+// }

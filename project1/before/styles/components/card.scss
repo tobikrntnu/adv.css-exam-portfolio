@@ -1,0 +1,27 @@
+
+// styling the cards (with the card class), and separating it from the review section
+// to make scaling easier. I can now use this styling for all cards, no matter if they
+// are used in the review section, or if I were to make a new page on my website
+.card {
+  border-radius: 1em;
+  padding: var(--padding-small);
+  background-color: var(--color-primary);
+  // Making the names of the people reviewing bold to separate it from the review
+  &__name {
+    font-weight: bold;
+  }
+  // coloring the stars gold
+  &__star {
+    color: var(--color-review-stars);
+  }
+
+  // styling the primary and secondary cards differently (only to try out some modifiers)
+  &--primary {
+    border-left: 0.7em solid var(--color-secondary);
+    background-color: var(--background-color-card);
+  }
+  &--secondary {
+    border-left: 0.7em solid var(--color-card-secondary);
+    background-color: var(--background-color-card);
+  }  
+}  

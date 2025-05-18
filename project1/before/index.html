@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/base/global.css">
+    <link rel="stylesheet" href="styles/components/navigation.css">
+    <link rel="stylesheet" href="styles/components/button.css">
+    <link rel="stylesheet" href="styles/components/card.css">
+    <link rel="stylesheet" href="styles/pages/index.css">
+    <link rel="stylesheet" href="styles/layout/grid.css">
+    <link rel="stylesheet" href="styles/layout/flex.css">
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <meta
+      name="description"
+      content="Garmin showcase page Oblig1 | Advanced CSS | Gjøvik"
+    >
+    <title>Oblig1 - Advanced CSS | Gjøvik</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Garmin Showcase Website</h1>
+      <button
+        class="header__button"
+        type="button"
+        onclick="alert('You will get the item sent to you!')"
+      >
+        Buy Now!
+      </button>
+    </header>
+
+    <main>
+      <cover-l>
+        <div class="cover">
+          <h2 class="cover__title">Garmin Vivoactive 5</h2>
+          <figure class="cover__image">
+            <img
+              src="images/garminShowcase.jpg"
+              alt="Garmin showcase image"
+              title="Garmin showcase"
+            >
+            <figcaption class="cover__text">
+              <em>-The best there is</em>
+            </figcaption>
+          </figure>
+        </div>
+      </cover-l>
+
+      <stack-l class="features">
+        <h2 class="features__title">Key Features of Garmin Vivoactive 5</h2>
+        <div class="features__list">
+          <div class="features__container">
+            <h3 class="features__subtitle">Long Battery Life</h3>
+            <p class="features__description">
+              Stay connected and powered up for longer with up to 10 days of
+              battery life.
+            </p>
+          </div>
+          <div class="features__container">
+            <h3 class="features__subtitle">Advanced Health Tracking</h3>
+            <p class="features__description">
+              Monitor your heart rate, sleep quality, and more with built-in
+              sensors.
+            </p>
+          </div>
+          <div class="features__container">
+            <h3 class="features__subtitle">Smart Notifications</h3>
+            <p class="features__description">
+              Receive calls, texts, and app notifications directly on your
+              wrist.
+            </p>
+          </div>
+          <div class="features__container">
+            <h3 class="features__subtitle">Water-Resistant Design</h3>
+            <p class="features__description">
+              Perfect for swimming, with water resistance up to 50 meters.
+            </p>
+          </div>
+        </div>
+      </stack-l>
+
+      <section class="review">
+        <h2 class="review__title">Customer reviews</h2>
+        <div class="review__div">
+          <div class="card card--primary">
+            <p class="card__name">Mark Markson (37)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">The best smart watch i have ever tried!</p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Bertha Berthason (49)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">
+              I like the features a lot, and the look of it
+            </p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Jacob Jacobsen (21)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">
+              Light, easy to use and fits perfect with any outfit
+            </p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Frank Ocean (32)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">
+              Just upgraded from the Forerunner 245, and couldn't be more happy!
+            </p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Frank Onion (41)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">
+              I have finally gotten the information about my body that i needed
+              to help me with my workouts
+            </p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Mathias Matssen (15)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">I like it</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; 2025 Student Garmin Company. All rights reserved.
+      </p>
+      <nav class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="mailto:example@gmail.com">Send us an email</a>
+          </li>
+          <li class="footer__item"><a href="about.html">About page</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

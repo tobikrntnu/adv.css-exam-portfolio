@@ -1,0 +1,20 @@
+.card {
+  border-radius: 1em;
+  padding: var(--padding-small);
+  background-color: var(--color-primary);
+}
+.card__name {
+  font-weight: bold;
+}
+.card__star {
+  color: var(--color-review-stars);
+}
+.card--primary {
+  border-left: 0.7em solid var(--color-secondary);
+  background-color: var(--background-color-card);
+}
+.card--secondary {
+  border-left: 0.7em solid var(--color-card-secondary);
+  background-color: var(--background-color-card);
+}
+/*# sourceMappingURL=card.css.map */

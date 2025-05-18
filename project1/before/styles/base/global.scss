@@ -1,0 +1,49 @@
+// here i have some general rules, like an axiom shown in class that uses 
+// exception based styling to make the text no longer than 60 characters.
+// When I added the font family here, the footer and header didnt use the font, so I
+// had to add the font family to them as well
+* {
+    max-inline-size: var(--measure);
+    font-family: var(--font);
+    max-width: 100%;
+}
+// used for the axiom
+html,
+body, 
+div,
+header,
+section,
+nav,
+main, 
+footer {
+    max-inline-size: none;
+}
+// Created my variables here, instead of having for example a _colors.scss file for them
+:root {
+    --font: Verdana, sans-serif;
+    --color-primary: grey;
+    --color-secondary: blue;
+    --color-secondary-hover: rgb(49, 69, 249);
+    --color-tertiary: white;
+    --textcolor-secondary: white;
+    --color-showcase-background: #e6f7ff;
+    --color-card-secondary: lightblue;
+    --background-color-card: #f4f4f4;
+    --color-review-stars: gold;
+    --header1: 2.5em;
+    --header2: 1.5em;
+    --measure: 60ch;
+    --padding-small: 0.5em;
+    --padding-medium: 0.7em;
+    --padding-large: 1em;
+    --margin-xsmall: 0.2em;
+    --margin-small: 0.5em;
+    --margin-medium: 0.7em;
+    --margin-large: 1em;
+}
+// I also added a max-width including margin and padding for figure and img tags to make 
+// sure that any images do not exceed their parent container
+figure, img {
+    max-width: 100%;
+    box-sizing: border-box;
+}

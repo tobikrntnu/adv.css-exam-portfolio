@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/components/navigation.css">
+    <link rel="stylesheet" href="styles/base/global.css">
+    <link rel="stylesheet" href="styles/components/button.css">
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/pages/about.css">
+    <meta name="description" content="About page for Oblig1 Advanced CSS">
+    <title>Oblig1 - Advanced CSS | Gjøvik</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">About page</h1>
+    </header>
+
+    <main id="about">
+      <section class="description">
+        <h2 class="description__subtitle">General</h2>
+        <p class="description__text">
+          For this website, I decided to use the reset css. I know that on the
+          website it says that it is not recommended to use in its unaltered
+          state, but i decided to keep the whole thing because I didn't know
+          what to take away, and therefore kept it whole.
+        </p>
+        <p class="description__text">
+          I have commented in the code where I have used logical properties
+          instead of traditional directional properties.
+        </p>
+        <p class="description__text">
+          I didn't find a scss validator, but I validated the css files
+        </p>
+      </section>
+      <section class="description">
+        <h2 class="description__subtitle">BEM methodology</h2>
+        <p class="description__text">
+          I used BEM methodology to structure my code to make it easier to
+          manage and scale, and used BEM naming conventions. I tried to use this
+          to identify the block element first, and then the elements of the
+          block and if there were any modifiers to use.
+        </p>
+        <p class="description__text">
+          On the reviews, I made a "card" block. I then identified elements that
+          i wanted on the card, such as a name, stars and text. I then used BEM
+          naming methodology and named the elements by doing block__element. In
+          addition to this, I tried to separate a card by using a modifier. I
+          tried the first card as primary and the rest as secondary. There were
+          no meaningful use for this, but i wanted to try it to see how it
+          worked.
+        </p>
+        <p class="description__text">
+          This is the same structure i followed with my header, footer, buttons
+          and all the other sections of my website.
+        </p>
+      </section>
+      <section class="description">
+        <h2 class="description__subtitle">Structure of files</h2>
+        <p class="description__text">
+          I started by creating an images folder, and made another folder for
+          each html page to make it easier to separate if I were to add many
+          more pages to the website. I also added a styles folder, and then I
+          added the sub folders inside. The sub folders i decided to add were:
+          base, components, layout, pages and utilities. Inside the base folder,
+          I added a global.scss and a reset.scss file. As explained earlier, I
+          kept the reset file as it was, and in my global.scss file, I hade some
+          global rules, an axiom and my variables.
+        </p>
+        <p class="description__text">
+          In my components folder, I added scss pages for the components I have
+          used on the website, such as buttons, card and navigation. In my
+          layout folder, I have a flex.scss file and a grid.scss file where I
+          have the grid and flex properties separated from the rest of the css
+          styling to separate concerns and make it easier to find and change. In
+          the pages folder, I have page specific styling, and i have a utilities
+          folder, but I have not used any helper classes or such, so there are
+          no pages in this folder, but I have it in the project as good practice
+          for future projects where i would need it.
+        </p>
+      </section>
+      <section class="description">
+        <h2 class="description__subtitle">Stack and Cover layout</h2>
+        <p class="description__text">
+          I found this part a little difficult to understand, but i tried to use
+          the cover layout for the hero section with the image of the watches. I
+          copied a bit of code from "Every Layout" and used it on the image to
+          cover the whole width and automatically rescale when the viewport gets
+          smaller or bigger. I did the same with the stack layout, and used that
+          on the features section to create the layout
+        </p>
+      </section>
+      <section class="description">
+        <h2 class="description__subtitle">
+          Responsiveness without Media queries
+        </h2>
+        <p class="description__text">
+          I have not used any media queries, and yet the website is responsive.
+          One thing I have done is inside ".review__div", where I have added
+          this: "grid-template-columns: repeat(auto-fill, minmax(250px,1fr));"
+          Another thing I have done is added max-width properties in the
+          global.scss file to ensure that there are no overflow. I have also
+          used the cover and stack layout provided by "Every Layout", and these
+          are responsive without having to use media queries.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; 2025 Student Garmin Company. All rights reserved.
+      </p>
+      <nav class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="mailto:example@gmail.com">Send us an email</a>
+          </li>
+          <li class="footer__item"><a href="index.html">Showcase page</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

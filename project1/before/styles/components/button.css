@@ -1,0 +1,13 @@
+button {
+  background-color: var(--color-secondary);
+  color: var(--textcolor-secondary);
+  padding: var(--padding-medium);
+  border-radius: 0.5em;
+  border: none;
+  font-size: large;
+  margin: var(--margin-small);
+}
+button:hover {
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=button.css.map */

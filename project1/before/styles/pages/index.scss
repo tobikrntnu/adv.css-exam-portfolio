@@ -1,0 +1,51 @@
+.cover {
+  background-color: var(--color-showcase-background);
+  &__title {
+    font-size: var(--header2);
+    font-weight: bold;
+    margin: var(--margin-small);
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    padding-bottom: var(--padding-medium);
+  }
+}
+// styling for the reviews section
+.review {
+  &__div {
+    padding: var(--padding-large);
+    justify-content: center;
+    gap: 0.7em;
+  }
+
+  &__title {
+      // separating the 
+      text-align: center;
+      font-size: var(--header2);
+      font-weight: bold;
+  }
+}
+// styling for the features section
+.features {
+  &__title {
+      font-weight: bold;
+      font-size: var(--header2);
+      text-align: center;
+      margin: 1em 0 0 1em;
+  }
+
+  &__list {
+      margin: var(--margin-large);
+  }
+
+  &__container {
+      border-radius: 0.7em;
+      padding: var(--padding-large);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  &__subtitle {
+      margin-bottom: var(--margin-small);
+      font-weight: bold;
+  }
+}
