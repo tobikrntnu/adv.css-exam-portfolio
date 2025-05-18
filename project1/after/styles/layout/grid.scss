@@ -1,0 +1,7 @@
+
+.features__container {
+    display: grid;
+    // I used this to make the reviews repeat and when there is no more space, they go to the row below
+    // to make it responsive without media queries
+    grid-template-columns: repeat(auto-fill, minmax(30%,1fr));
+}

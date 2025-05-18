@@ -1,0 +1,39 @@
+// making the same styling for the headers and footers for consistency of design
+.header, .footer {
+  font-family: var(--font);
+  background-color: var(--color-primary, grey);
+  text-align: center;
+  padding: var(--padding-large) 0 var(--padding-large) 0;
+  color: var(--textcolor-secondary);
+
+  &__title {
+    font-size: var(--header1);
+  }
+  // styling the navigation bar in the footer and if i were to add a navbar in my header
+  &__navigation {
+      .footer__list {
+          list-style: none;
+          display: inline-flex;
+      
+          .footer__item {
+              // logical property
+              margin-block-end: var(--margin-small);
+      
+              & a {
+                  padding: 0.7em;
+                  background-color: var(--color-secondary, blue);
+                  color: var(--color-tertiary, white);
+                  text-decoration: none;
+                  border-radius: 0.5em;
+                  display: inline-block;
+                  margin: var(--margin-small);
+
+                  &:hover {
+                      background-color: var(--color-secondary-hover);
+                      color: var(--color-tertiary, white);
+                  }
+              }
+          }
+      }
+  }
+}

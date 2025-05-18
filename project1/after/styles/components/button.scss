@@ -1,0 +1,16 @@
+// styling for button html tags, so that if i were to add other buttons, they 
+// would have the same styling (better scalability)
+button {
+    background-color: var(--color-secondary);
+    color: var(--textcolor-secondary);
+    padding: var(--padding-medium);
+    border-radius: 0.5em;
+    border: none;
+    font-size: large;
+    // logical property instead of traditional directional property
+    margin: var(--margin-small);
+    // making the button a little bit bigger when hovered over
+    &:hover {
+        transform: scale(1.1);
+    }
+}

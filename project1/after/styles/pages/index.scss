@@ -1,0 +1,17 @@
+.cover {
+  &__title {
+    font-size: var(--header2);
+    font-weight: bold;
+    margin: var(--margin-small);
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    padding-bottom: var(--padding-medium);
+  }
+}
+
+.features {
+    margin: var(--margin-medium);
+    padding: var(--padding-medium);
+}
