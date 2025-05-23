@@ -26,6 +26,7 @@ footer {
     --color-secondary-hover: rgb(49, 69, 249);
     --color-tertiary: white;
     --textcolor-secondary: white;
+    --features-grey: #ddd;
     --color-showcase-background: #e6f7ff;
     --color-card-secondary: lightblue;
     --background-color-card: #f4f4f4;
@@ -40,6 +41,8 @@ footer {
     --margin-small: 0.5em;
     --margin-medium: 0.7em;
     --margin-large: 1em;
+    --border-radius-small: 0.5em;
+    --border-radius-big: 1em;
 }
 // I also added a max-width including margin and padding for figure and img tags to make 
 // sure that any images do not exceed their parent container

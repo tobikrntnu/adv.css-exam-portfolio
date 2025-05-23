@@ -76,6 +76,7 @@ footer {
   --color-secondary-hover: rgb(49, 69, 249);
   --color-tertiary: white;
   --textcolor-secondary: white;
+  --features-grey: #ddd;
   --color-showcase-background: #e6f7ff;
   --color-card-secondary: lightblue;
   --background-color-card: #f4f4f4;
@@ -90,6 +91,8 @@ footer {
   --margin-small: 0.5em;
   --margin-medium: 0.7em;
   --margin-large: 1em;
+  --border-radius-small: 0.5em;
+  --border-radius-big: 1em;
 }
 
 figure, img {
@@ -112,8 +115,7 @@ figure, img {
   display: inline-flex;
 }
 .header__navigation .footer__list .footer__item, .footer__navigation .footer__list .footer__item {
-  -webkit-margin-after: var(--margin-small);
-          margin-block-end: var(--margin-small);
+  margin-block-end: var(--margin-small);
 }
 .header__navigation .footer__list .footer__item a, .footer__navigation .footer__list .footer__item a {
   padding: 0.7em;
@@ -139,75 +141,125 @@ button {
   margin: var(--margin-small);
 }
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.card {
+  border-radius: var(--border-radius-big);
+  padding: var(--padding-small);
+  background-color: var(--color-primary);
+}
+.card__name {
+  font-weight: bold;
+}
+.card__star {
+  color: var(--color-review-stars);
+}
+.card--primary {
+  border-left: 0.7em solid var(--color-secondary);
+  background-color: var(--background-color-card);
+}
+.card--secondary {
+  border-left: 0.7em solid var(--color-card-secondary);
+  background-color: var(--background-color-card);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+cover-l {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 30vh;
+}
+
+stack-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.review__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.5em;
 }
 
 .features__container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
-.cover {
-  background-color: var(--color-showcase-background);
-}
-.cover__title {
-  font-size: var(--header2);
-  font-weight: bold;
-  margin: var(--margin-small);
-  text-align: center;
-}
 .cover__text {
   text-align: center;
   padding-bottom: var(--padding-medium);
+  font-style: italic;
 }
 
-.review__div {
-  padding: var(--padding-large);
-  justify-content: center;
-  gap: 0.7em;
+.features {
+  margin: var(--margin-medium);
+  padding: var(--padding-medium);
 }
-.review__title {
-  text-align: center;
-  font-size: var(--header2);
-  font-weight: bold;
-}
-
 .features__title {
+  text-align: center;
+  font-size: var(--header2);
+  font-weight: bold;
+  margin-bottom: var(--margin-medium);
+}
+.features__element {
+  border: 2px solid var(--features-grey);
+  border-radius: 0.7em;
+  padding: var(--padding-medium);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+  margin: var(--margin-medium);
+}
+.features__element img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  max-height: 60vh;
+  margin-bottom: var(margin-medium);
+}
+.features__subtitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: var(--margin-small);
+}
+.features__information {
+  padding: var(--padding-small);
+}
+
+.fitness {
+  padding: var(--padding-medium);
+}
+.fitness__title {
   font-weight: bold;
   font-size: var(--header2);
   text-align: center;
-  margin: 1em 0 0 1em;
+  margin: var(--margin-medium);
 }
-.features__list {
+.fitness__list {
   margin: var(--margin-large);
 }
-.features__container {
+.fitness__container {
   border-radius: 0.7em;
   padding: var(--padding-large);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
-.features__subtitle {
+.fitness__subtitle {
   margin-bottom: var(--margin-small);
   font-weight: bold;
 }
 
-#about {
-  background-color: var(--color-showcase-background);
-}
-#about .description {
+.review {
   padding: var(--padding-small);
-  max-width: 80%;
-  -webkit-margin-start: auto;
-          margin-inline-start: auto;
-  -webkit-margin-end: auto;
-          margin-inline-end: auto;
 }
-#about .description__subtitle {
-  font-weight: bold;
+.review__title {
   font-size: var(--header2);
-  margin-bottom: var(--margin-small);
-}
-#about .description__text {
-  padding-bottom: var(--margin-small);
-}
-/*# sourceMappingURL=main.css.map */
+  text-align: center;
+  margin-bottom: var(--margin-medium);
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */

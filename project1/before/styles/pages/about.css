@@ -4,10 +4,8 @@
 #about .description {
   padding: var(--padding-small);
   max-width: 80%;
-  -webkit-margin-start: auto;
-          margin-inline-start: auto;
-  -webkit-margin-end: auto;
-          margin-inline-end: auto;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 #about .description__subtitle {
   font-weight: bold;
@@ -16,5 +14,4 @@
 }
 #about .description__text {
   padding-bottom: var(--margin-small);
-}
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */

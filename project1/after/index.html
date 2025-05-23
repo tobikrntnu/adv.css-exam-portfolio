@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/base/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-    <meta name="description" content="Garmin showcase page Oblig1 | Advanced CSS | Gjøvik" />
-    <title>Garmin Showcase | Oblig 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/base/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Garmin showcase page Oblig1 | Advanced CSS | Gjøvik">
+    <title>Garmin Showcase | improved version</title> 
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Garmin Vivoactive 5</h1>
-      <p class="header__tagline">Smart, stylish and made for performance</p>
       <button
         class="header__button"
         type="button"
@@ -22,52 +21,130 @@
     </header>
 
     <main>
-      <section class="cover">
+      <cover-l class="cover">
         <figure class="cover__image">
           <img
             src="images/garmin-vivoactive5.avif"
             alt="Garmin Vivoactive 5"
             title="Garmin Vivoactive 5"
           />
-          <figcaption class="cover__text">Your next favorite smartwatch</figcaption>
+          <figcaption class="cover__text">-Your next favorite smartwatch</figcaption>
         </figure>
-      </section>
+      </cover-l>
 
       <section class="features">
         <h2 class="features__title">Key Features</h2>
         <div class="features__container">
             <div class="features__element">
-                <p class="features__subtitle">Bright touchscreen display</p>
-                <img src="images/icon-sun.svg" alt="Sun">
+              <img src="images/features-weather.avif" alt="Garmin with weather information" title="Weather feature">
+              <p class="features__subtitle">Weather</p>
+              <p class="features__information">You can check the weather directly on your smart watch. Get 
+                additional information such as UV index, air humidity and cloud cover.
+              </p>
             </div>
             <div class="features__element">
-                <p class="features__subtitle">Up to 11 days of battery life</p>
-                <img src="" alt="">
+              <img src="images/features-messages.webp" alt="Text messages on a garmin watch" title="Messages">
+              <p class="features__subtitle">Messages</p>
+              <p class="features__information">Recieve and send text messages directly from the watch</p>
             </div>
             <div class="features__element">
-                <p class="features__subtitle">Detailed health insight</p>
-                <img src="" alt="">
+              <img src="images/features-activities.webp" alt="Garmin watch with activities" title="Garmin activities">
+              <p class="features__subtitle">Activities</p>
+              <p class="features__information">Start and perform different forms of exercise and track them with
+                the new technology used to precisely show your activity level.
+              </p>
             </div>
             <div class="features__element">
-                <p class="features__subtitle">Features like garmin pay or music</p>
-                <img src="" alt="">
+              <img src="images/features-bodybattery.webp" alt="Watch with body battery" title="Body battery">
+              <p class="features__subtitle">Body battery</p>
+              <p class="features__information">Get an insight into your energy levels throughout the day. Learn 
+                when you need to rest, or when you can push on.
+              </p>
             </div>
-        </div>
         </div>
       </section>
 
-      <section class="">
-        <h2></h2>
+      <section class="fitness">
+        <h2 class="fitness__title">Fitness tracking</h2>
+        <stack-l>
+        <div class="fitness__container">
+          <p class="fitness__subtitle">Track steps</p>
+          <p class="fitness__text">Track your steps and set goals to motivate you to become more active!</p>
+        </div>
+        <div class="fitness__container">
+          <p class="fitness__subtitle">VO2 max</p>
+          <p class="fitness__text">See your current max oxygen intake to check your current fitness level</p>
+        </div>
+        <div class="fitness__container">
+          <p class="fitness__subtitle">Intensity minutes</p>
+          <p class="fitness__text">Track the amount of active minutes you have during a week</p>
+        </div>
+        <div class="fitness__container">
+          <p class="fitness__subtitle">Fitness age</p>
+          <p class="fitness__text">Gives you an overall health and fitness level compared to your biological age</p>
+        </div>
+        <div class="fitness__container">
+          <p class="fitness__subtitle">Total calories burnt</p>
+          <p class="fitness__text">Check how many calories you burn both inactively during the day, and from exercise</p>
+        </div>
+        <div class="fitness__container">
+          <p class="fitness__subtitle">Restitution</p>
+          <p class="fitness__text">Get a detailed time to restitute based on your previous activity</p>
+        </div>
+        </stack-l>
       </section>
 
+      <section class="review">
+        <h2 class="review__title">Customer reviews</h2>
+        <div class="review__container">
+          <div class="card card--primary">
+            <p class="card__name">Daniel Lazarov (37)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">The best smart watch i have ever tried!</p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Hazan Hummel (42)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">
+              I like the features a lot, and the look of it
+            </p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Rebecca Rodrigo (21)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">
+              Light, easy to use and fits perfect with any outfit
+            </p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">David Hayden (18)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">
+              Just upgraded from the Forerunner 245, and couldn't be more happy!
+            </p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Milena Morrish (28)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">
+              I have finally gotten the information about my body that i needed
+              to help me with my workouts
+            </p>
+          </div>
+          <div class="card card--secondary">
+            <p class="card__name">Daniel Hearn (15)</p>
+            <p class="card__star">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+            <p class="card__text">I like it</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <p class="footer__text">&copy; 2025 Garmin Showcase Student Project</p>
-      <nav class="footer__nav">
+      <nav class="footer__navigation">
         <ul class="footer__list">
-          <li><a href="about.html">About</a></li>
-          <li><a href="mailto:example@gmail.com">Contact</a></li>
+          <li class="footer__item"><a href="mailto:example@gmail.com">Send an email!</a></li>
         </ul>
       </nav>
     </footer>
