@@ -12,19 +12,13 @@ cover-l {
     flex-direction: column;
     // I had to change this from 100, because the section underneath got pushed further down when resizing the 
     // screen size, and it left a lot of white space
-    min-block-size: 30vh;
-    //padding: var(--s1);
+    min-block-size: 40vh;
+    padding: var(--padding-large);
   }
 
 // this is copied from "Every Layout"
-// I have also not separated the flex elements from the rest to make it easier to see what has been
-// copied and put in.
 stack-l {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
-  // this was a part of the code, but I did not find a use for it, so 
-// stack-l > * + * {
-  // margin-block-start: var(--margin-xsmall);
-// }

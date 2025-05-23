@@ -1,8 +1,18 @@
 .cover {
+  padding: 0;
+  &__title {
+    position: relative;
+    top: 2em;
+    text-align: center;
+    font-size: var(--header1);
+    font-weight: bold;
+  }
   &__text {
     text-align: center;
-    padding-bottom: var(--padding-medium);
+    margin-top: var(--margin-medium);
     font-style: italic;
+    position: relative;
+    bottom: 3em;
   }
 }
 

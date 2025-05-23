@@ -1,0 +1,23 @@
+.specs {
+    padding: var(--padding-medium);
+    &__title {
+        font-size: var(--header2);
+        margin: var(--margin-small);
+        text-align: center;
+        font-weight: bold;
+    }
+    &__table {
+        max-width: 90%;
+        font-size: 1rem;
+        margin: 0 auto;
+        border-collapse: collapse;
+        th, td {
+            border: 1px solid var(--features-grey, #ccc);
+            padding: var(--padding-small);
+        }
+        thead {
+            font-weight: bold;
+            background-color: #f5f5f5;
+        }
+    }
+}
