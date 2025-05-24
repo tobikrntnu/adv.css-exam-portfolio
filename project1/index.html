@@ -34,16 +34,122 @@
             <p>Husk å legge til bilder på linkene</p>
             <h3 class="reflection__subheader">Feedback</h3>
             <p class="reflection__text">
-                The feedback of what I needed to improve from the oblig, were divided into three main parts.
-                Firstly, that it was better to import all SASS files into one main scss file, and then 
-                only link that file into the HTML. I added a main.scss, and imported all the 
-                partial SASS files into that so that I only had to compile that one file. 
+                I recieved feedback on my first task that helped me a lot and guided 
+                me to major improvements in my coding practices and project organization. The first point
+                was about the way i managed my SASS files. Originally, I had all my separate SASS files 
+                linked individually, which made the project harder to maintain and added several unneeded files. 
+                The first part of the feedback to make all SASS files into partials, and imported them all 
+                into one main.scss file, so that I only needed to compile that one scss file. After implementing 
+                this change, I noticed that i saved time and reduced a lot of confusion because of the amount of 
+                files in the project. 
             </p>
             <p class="reflection__text">
-                The second was that I had to remove all commented-out or unused code. This was an easy fix, 
-                so I removed all the code that was commented out.
+                The second piece of feedback was about removing commented-out or unused code. I had some pieces of 
+                commented out code that I left in because I used them in earlier versions, and kept them "just in case".
+                This cluttered some of my files, and made the SASS harder to read. Cleaning this out made my code cleaner. 
+                More importantly, it helped me develop a habit of keeping my code clean and neat, which is very important 
+                when my projects grow and when working in teams.
             </p>
+            <p class="reflection__text">
+                The third, was that the website seemed unfinished, and in need of some refinement to make it come together 
+                cohesively. The first website had little actual content. I added two sections to the website, a specs table 
+                and a key features section. Two of the sections in the website were copied over from "Every Layout" like 
+                described in the task description, so I decided to keep them in the last version of the website as well. 
+                I focused on adding relevant sections and cleaned up some of the other parts of the website. I worked on 
+                enhancing the general website to make it visually balanced, while focusing on the actual purpose of the task. 
+            </p>
+
+            <h3 class="reflection__subheader">General Reflection and learning outcomes</h3>
+            <div>
+                <h4 class="reflection__subheader">BEM methodology</h4>
+                <p class="reflection__text">
+                    The focus on the first task was learning about key concepts like SASS, BEM methodology, scalability and separation of concerns. 
+                    One of the most impactful learning concepts was the BEM (Block, element, modifier) naming methodology. This 
+                    fundamentally changed how I view and write HTML and CSS code. I start by identifying the block, and then the 
+                    elements within that block and possible modifiers for the given elements. Before learning about this, my HTML 
+                    and CSS was inconsistent and difficult to maintain and scale. I would often encounter problems with 
+                    what element I wanted to style, conflicting class names and styling that were hard to track and identify, 
+                    especially as the projects gets bigger. 
+                </p>
+                <p class="reflection__text">
+                    Using BEM made my approach more structured and modular, and helped me keep my code more 
+                    organized and predictable. Instead of using names like .button-blue, I swapped them with 
+                    .card__button with a possible --modifier, which made it much clearer what element I was working with 
+                    and where to find it within my code. 
+                </p>
+                <p class="reflection__text">
+                    Sometimes the naming conventions of BEM can be repetitive. Personally, I like the consistency and clarity it 
+                    provides. It makes debugging easier and helped me write more reusable and scalable CSS. Before using BEM, I 
+                    stumbled into some deeply nested selectors that sometimes created specificity issues and tangled code. 
+                </p>
+                <p class="reflection__text">
+                    Overall, learning to apply BEM into my projects was one of the most valuable takeaways from this 
+                    assignment. It gave me an easier approach to managing bigger projects, and I plan to continue using it 
+                    in future projects.
+                </p>
+            </div>
+            <div>
+                <h4 class="reflection__subheader">File structure</h4>
+                <p class="reflection__text">
+                    One of the most important things I have learned throughout this assignment was how important it is 
+                    with a well structured and organized file structure. This helps with the development process, scalability, 
+                    separation of concerns and most importantly structure. 
+                </p>
+                <p class="reflection__text">
+                    After learning about the file structure, I have restructured my projects into folders and subfolders to 
+                    separate the different aspects and parts of the projects. This setup helps a lot with making changes to 
+                    specific parts of my projects without having to search through one CSS file to find it. When separating 
+                    the different components and layout from the page specific styling, it helped me separate concerns, so 
+                    when I wanted to change a specific component late in the process I could do it without any problem. This 
+                    also made it easier to reuse my code, because when I add pages to my projects that includes for example 
+                    buttons or links, I can use the same SASS files to create a more well rounded project that comes together 
+                    nicely. Then I can also change directly in that subfolder, and all the buttons change on all websites, 
+                    creating a more cohesive experience for the user. 
+                </p>
+                <p class="reflection__text">
+                    This structure is something I am definetely implementing in the future. It will save me a lot of time, 
+                    create a better structure and save me countless times of having to finely go through and check where the 
+                    specific issue is and how to fix it. 
+                </p>
+            </div>
+            <div>
+                <h4 class="reflection__subheader">SCSS & SASS</h4>
+                <p class="reflection__text">
+                    One of the key improvements I learned during this, was switching from standard CSS to SCSS, or SASS. 
+                    This helped me improve structure in my styling, while helping me improve readability and 
+                    maintainability in my stylesheets. The use of nesting was particularly helpful for styling elements 
+                    while keeping my code clean and easier to navigate. It greatly reduced repetition and visually grouped 
+                    together styling for specific elements, which made it easier to read and change parts of the code. I also 
+                    learned the importance of not overusing nesting, as it can become overly specific and hard to change later. 
+                </p>
+                <p class="reflection__text">
+                    Using SCSS enabled me to create reusable parts of styling, such as cards, buttons, navigation and table in 
+                    this project. It did not only save time, but also pushed me to create modular and reusable code. This helped 
+                    me keep the design consistent throughout the website, but also when adding more pages and parts to my projects. 
+                    Overall, learning to use SASS effectively was a significant improvement on my coding and how I 
+                    approach styling, and is something I will definitely use this in future projects.
+                </p>
+            </div>
+            <div>
+                <h4 class="reflection__subheader">Modular and reusable code</h4>
+                <p class="reflection__text">
+                    Another major focus throughout this assigment was improving how I structure and write modular and reusable code. 
+                    One of the biggest takeaways from this, is how I focus on writing code that can be reused in different parts 
+                    and pages of my projects. This is something that will save me a lot of time in the long run, reduce errors and 
+                    increase maintainability.  
+                </p>
+                <p class="reflection__text">
+                    All the different aspects I have written about and learned, has guided me towards coding in a more modoular and 
+                    reusable way. This means that I can make changes to individual components without accidentally affecting other 
+                    parts of the project, and made it possible to reuse these components across different parts of my projects. I am 
+                    now thinking about all these different aspects of my coding, which helps me improve as a developer and gives me 
+                    tools that I can use in the future when projects and tasks gets more extensive. Thinking like this has improved 
+                    my workflow and also prepared me for how to code when working in team environments, because then the different 
+                    people can work on different parts of the project. 
+                </p>
+            </div>
         </section>
+
     </main>
 
     <footer>

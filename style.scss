@@ -29,19 +29,20 @@ a {
   font-weight: bold;
   border-radius: 0.5em;
   transition: background-color 0.3s ease;
-}
-a:hover {
-  background-color: #004d99;
+
+  &:hover {
+    background-color: #004d99;
+  }
 }
 
 .reflection {
   margin: 0 auto;
   max-width: 80%;
-}
-.reflection__text {
-  max-width: 90%;
-  margin: 0 auto;
-  margin-bottom: 1em;
+  &__text {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
 }
 
 .project {
@@ -58,4 +59,4 @@ a:hover {
 
 footer {
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+}
