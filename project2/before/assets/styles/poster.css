@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#toggle-button {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-button:hover {
+    background-color: #0056b3;
+}
+
+#poster-container {
+    margin: auto;
+    aspect-ratio: 1 / 1.4142;  /* A4 ratio */
+    background-color: #ffffff;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+    max-width: 100%;  /* Prevent horizontal scroll */
+    overflow: hidden;   /* Poster are not scrollable. To Allow content scrolling for testing purposes, change this to scroll or auto. */
+}
+
+/* Viewport fit mode */
+#poster-container.viewport-fit {
+    /* Calculate dimensions based on A4 ratio */
+    width: min(calc(95vh / 1.4142), 90vw);
+    height: min(95vh, calc(90vw * 1.4142));
+    margin: 0 auto;
+}
+
+/* Fullscreen mode */
+main.has-fullscreen {
+    padding: 20px;
+}
+
+#poster-container.fullscreen {
+    width: 90vw;
+    height: calc(90vw * 1.4142);
+    margin: 20px auto;
+}
+
+/* Ensure content stays within container */
+#poster-container > * {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.width-display {
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        background: none;
+    }
+
+    main {
+        padding: 0;
+        background: none;
+    }
+
+    #toggle-button {
+        display: none;
+    }
+
+    #poster-container {
+        margin: 0;
+        /* border: none; */
+        border: 1px solid black;
+        width: 100%;
+        height: auto;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    /* Reset any fullscreen or viewport-fit styles for printing */
+    #poster-container.fullscreen,
+    #poster-container.viewport-fit {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Ensure background and colors print properly */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .width-display {
+        display: none;
+    }
+}

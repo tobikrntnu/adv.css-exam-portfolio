@@ -1,0 +1,461 @@
+// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+:root {
+    --color-blue: #005ba7;
+    --color-white: white;
+    --color-green: green;
+    --font-header: 'Open sans', sans-serif;
+    --font-cursive: 'marydale', cursive;
+    --fs-1: 1.15em;
+    --fs-2: 0.6em;
+    --fs-3: 0.4em;
+    --fs-4: 0.3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.poster {
+    position: relative;
+}
+
+h1 {
+    color: var(--color-blue);
+    font-family: var(--font-header);
+    font-size: var(--fs-1);
+    font-weight: 750;
+    max-width: 55%;
+    & .green {
+        color: var(--color-green);
+    }
+}
+/* This helps me style text into several lines without using br, by adding span with this class to
+ the elements i want to separate on a new line */
+.line {
+    display: block;
+}
+
+.text {
+    font-family: var(--font-cursive);
+    position: absolute;
+    &bold {
+        font-weight: 1000;
+    }
+    &1 {
+        top: 9%;
+        left: 0;
+        width: 50%;
+        font-size: var(--fs-3);   
+    }
+    &-lightblue {
+        font-size: var(--fs-4);
+        top: 22.5%;
+        left: 3.5%;
+    }
+    &-blue1 {
+        color: var(--color-white);
+        font-size: var(--fs-3);
+        top: 38%;
+        left: 30%;
+    }
+    &-blue2 {
+        color: var(--color-white);
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 40%;
+        left: 42%;
+    }
+    &-blue3 {
+        color: var(--color-white);
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 43%;
+        left: 60%;
+    }
+    &-blue4 {
+        color: var(--color-white);
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 43%;
+        left: 81%;
+    }
+    &-white1 {
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 53.2%;
+        left: 6%;   
+    }
+    &-pink1 {
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 63%;
+        left: 40%;
+    }
+    &-pink2 {
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 58.5%;
+        left: 59%;
+    }
+    &-pink3 {
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 63%;
+        left: 82%;
+    }
+    &-pink4 {
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 78%;
+        left: 75%;
+    }
+    &-pink5 {
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 86%;
+        left: 65%;
+    }
+    &-pink6 {
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 84.5%;
+        left: 28%;
+    }
+    &-pink7 {
+        font-size: var(--fs-3);
+        font-family: var(--font-cursive);
+        top: 73%;
+        left: 6%;
+    }
+}
+.subtitle {
+    font-weight: 200;
+    font-size: var(--fs-2);
+    position: absolute;
+    font-family: var(--font-header);
+    &1 {
+        top: 0;
+        right: 0;
+    }
+    &2 {
+        top: 42%;
+        left: 3%;
+    }
+    &-pink {
+        top: 65%;
+        left: 6%;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+/* I used this formula for placement on all my visual elements to make it easier to place them exactly 
+ where I wanted them to go, I also used percentages to make them scalable. I also divided into background, 
+ where I had the background elements, and then i divided into the background colors and placed the elements 
+ I used inside the different colors into those to help me with structure */
+/* I tried adding position: absolute; inside here, but it just made every background go to the top left and 
+ became way too small */
+.background {
+    &__lightblue {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 9%;
+    }
+    &__blue {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+    &__pink {
+        width: 100%;
+        position: absolute;
+        bottom: 3%;
+        left: 0;
+    }
+}
+/* Same as with .background */
+.lightblue {
+    &__network {
+        position: absolute;
+        top: 13%;
+        left: 0;
+        width: 110%;
+    }
+    &__internet--1 {
+        position: absolute;
+        top: 14%;
+        left: 37.5%;
+        width: 5%;
+        animation: swing 3.5s ease-in-out infinite;
+        transform-origin: bottom center;
+    }
+    &__internet--2 {
+        position: absolute;
+        top: 10%;
+        left: 62.5%;
+        width: 5%;
+        animation: swing 3.5s ease-in-out infinite;
+        transform-origin: bottom center;
+    }
+    &__internet--3 {
+        position: absolute;
+        top: 13%;
+        left: 82%;
+        width: 5%;
+        animation: swing 3.5s ease-in-out infinite;
+        transform-origin: bottom center;
+    }
+    &__arrow--green {
+        position: absolute;
+        top: 19.5%;
+        left: 23%;
+        width: 13%;
+        animation: growShrink 2s ease-in-out infinite;
+    }
+    &__arrow--yellow {
+        position: absolute;
+        top: 36%;
+        left: 75.5%;
+        width: 4%;
+        animation: growShrink 2s ease-in-out infinite;
+    }
+}
+
+/* Same as with .background */
+.blue {
+    &__flame {
+        position: absolute;
+        width: 9%;
+        top: 48%;
+        left: 69%;
+    }
+    &__table {
+        position: absolute;
+        width: 35%;
+        top: 43%;
+        left: 59%;
+    }
+    &__list--1 {
+        font-family: var(--font-cursive);
+        color: var(--color-white);
+        font-size: var(--fs-4);
+        position: absolute;
+        top: 46.9%;
+        left: 62%;
+
+    }
+    &__list--2 {
+        font-family: var(--font-cursive);
+        color: var(--color-white);
+        font-size: var(--fs-4);
+        position: absolute;
+        top: 46.3%;
+        left: 83%;
+    }
+}
+
+/* Same as with .background */
+.white {
+    &__arrow--yellow {
+        position: absolute;
+        width: 10%;
+        top: 45%;
+        left: 48%;
+        animation: growShrink 2s ease-in-out infinite;
+    }
+    &__bracket {
+        position: absolute;
+        width: 4%;
+        top: 52%;
+        left: 20%;
+    }
+    &__list {
+        font-family: var(--font-cursive);
+        font-size: var(--fs-3);
+        position: absolute;
+        top: 53%;
+        left: 26%;
+        & li {
+            margin-bottom: 0.3em;
+        }
+    }
+    &__bacterias {
+        & .bacteria1 {
+            position: absolute;
+            width: 7%;
+            top: 44.3%;
+            left: 36.5%;
+            animation: fade 4s ease-in-out infinite;
+        }
+        & .bacteria2 {
+            position: absolute;
+            width: 6%;
+            top: 47%;
+            left: 29%;
+            animation: fade 4s ease-in-out infinite;
+            animation-delay: 0.5s;
+
+        }
+        & .bacteria3 {
+            position: absolute;
+            width: 6%;
+            top: 49%;
+            left: 40%;
+            animation: fade 4s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        & .bacteria4 {
+            position: absolute;
+            width: 10%;
+            top: 51.5%;
+            left: 45.5%;
+            animation: fade 4s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+        & .bacteria5 {
+            position: absolute;
+            width: 6%;
+            top: 56%;
+            left: 39%;
+            animation: fade 4s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+    }
+}
+
+/* Same as with .background */
+.pink {
+    &__world {
+        position: absolute;
+        width: 22%;
+        height: 22%;
+        bottom: 8%;
+        left: 45%;
+    }
+    &__mouth {
+        position: absolute;
+        width: 15%;
+        top: 35%;
+        left: 42%;
+        animation: flip 4s ease-in-out infinite;
+    }
+    &__thought {
+        position: absolute;
+        width: 13%;
+        top: 67%;
+        left: 68%;
+        animation: fade 4s ease-out infinite;
+    }
+    &__sun {
+        position: absolute;
+        width: 8%;
+        top: 74%;
+        left: 30%;
+    }
+    &__sunrays {
+        position: absolute;
+        width: 18%;
+        top: 71.6%;
+        left: 25%;
+        animation: spin 8s ease-in-out infinite;
+    }
+    &__raincloud {
+        position: absolute;
+        top: 85%;
+        left: 5%;
+        width: 12%;
+        transition: opacity 0.5s ease;
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &__coin {
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        width: 10%;
+        animation: swing 2.5s linear infinite;
+        transform-origin: top;
+    }
+    &__qr {
+        position: absolute;
+        width: 10%;
+        bottom: 5%;
+        right: 1%;
+        transform-origin: bottom right;
+        &:hover {
+            transform: scale(1.6);
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background-color: var(--color-blue);
+    width: 100%;
+    padding: 0.2em !important;
+    bottom: 0;
+    height: 5%;
+    &__image {
+        width: 30%;
+        & figure {
+            & img {
+                width: 95%;
+            }
+        }
+    }
+    & p {
+        color: var(--color-white);
+        font-size: var(--fs-3);
+    }
+    &__section {
+        width: 30%;
+        text-align: right; 
+    }
+    & a {
+        color: var(--color-white);
+        font-size: var(--fs-3);
+        text-decoration: none;
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__divider {
+        height: 70%;
+        background-color: var(--color-white);
+        border-radius: 2em;
+        padding: 0.1em;
+    }
+}
+
+@keyframes growShrink {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+@keyframes swing {
+    0%   { transform: rotate(-15deg); }
+    50%  { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg); }
+}
+@keyframes fade {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+@keyframes flip {
+    0%   { transform: rotate(180deg); }
+    50%  { transform: rotate(0deg); }
+    100%  { transform: rotate(180deg); } 
+}
