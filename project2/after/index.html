@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/poster.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vko6vqp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- 
+        Scripts should be placed at the end of the body or here in the <head> using defer. 
+        This option is considered more modern and provides slightly better performance in most cases.
+  -->
+  <script src="assets/scripts/poster.js" defer></script>
+  <title>Poster Viewer</title>
+</head>
+
+<body>
+  <main>
+    <button id="toggle-button">Toggle Fullscreen</button>
+    <div id="width-display" class="width-display"></div>
+    <div id="poster-container" class="poster">
+      <!-- IDG1293 - Oblig 2 code -->
+      <!-- Your implementation of the Poster content goes here -->
+      <h1> 
+        <span class="line">Webben og </span>
+        <span class="line"><span class="green">planeten</span> vår </span>
+      </h1>
+      <p class="text text1">Oppdag webbens skjulte innvirkning på planeten</p>
+      <h2 class="subtitle subtitle1">
+        <span class="line"><span class="bold">Internett</span> er helt </span> 
+        <span class="line">supert, men det trenger </span>
+        <span class="line"><span class="bold">strøm</span> for å fungere </span>
+      </h2>
+      <div class="background">
+        <div class="background__pink">
+          <img src="assets/images/background/pink-background.svg" alt="Pink background">
+        </div>
+        <div class="background__lightblue">
+          <img src="assets/images/background/lightblue-background.svg" alt="Lightblue background">
+        </div>
+        <div class="background__blue">
+          <img src="assets/images/background/blue-background.svg" alt="Blue background">
+        </div>
+      </div>
+
+      <div class="lightblue">
+        <p class="text text-lightblue"> 
+          <span class="line">Store datamaskiner kalt data-</span>
+          <span class="line">sentre bruker strøm for å holde</span>
+          <span class="line">internett i gang</span>
+        </p>
+        <div class="lightblue__network">
+          <figure><img src="assets/images/lightblue/network.svg" alt="Network"></figure>
+        </div>
+        <div class="lightblue__internet--1">
+          <figure><img src="assets/images/lightblue/internet.svg" alt="Internet connection"></figure>
+        </div>
+        <div class="lightblue__internet--2">
+          <figure><img src="assets/images/lightblue/internet.svg" alt="Internet connection"></figure>
+        </div>
+        <div class="lightblue__internet--3">
+          <figure><img src="assets/images/lightblue/internet.svg" alt="Internet connection"></figure>
+        </div>
+        <div class="lightblue__arrow--green">
+          <figure><img src="assets/images/lightblue/green-arrow.svg" alt="Green arrow"></figure>
+        </div>
+        <div class="lightblue__arrow--yellow">
+          <figure><img src="assets/images/lightblue/yellow-arrow.svg" alt="Yellow arrow"></figure>
+        </div>
+      </div>
+
+      <div class="blue">
+        <p class="text text-blue1 bold">Elektrisitet kommer fra</p>
+        <p class="text text-blue2 bold">forskjellige kilder</p>
+        <div class="blue__flame">
+          <figure><img src="assets/images/blue/yellow-flame.svg" alt="Yellow flame"></figure>
+        </div>
+        <p class="text text-blue3 bold">Ikke-fornybar energi</p>
+        <p class="text text-blue4 bold">Fornybar energi</p>
+        <div class="blue__table">
+          <figure><img src="assets/images/blue/table.svg" alt="Table of information"></figure>
+        </div>
+        <ul class="blue__list--1">
+          <li>Olje</li>
+          <li>Kull</li>
+          <li>Naturgass</li>
+        </ul>
+        <ul class="blue__list--2">
+          <li>Solenergi</li>
+          <li>Vindkraft</li>
+          <li>Vannkraft</li>
+          <li>Geotermisk energi</li>
+        </ul>
+      </div>
+
+      <div class="white">
+        <h2 class="subtitle subtitle2">
+          <span class="line"><span class="bold">Elektrisiteten</span> som</span>
+          <span class="line">brukes av nettet kan</span>
+          <span class="line">føre til noe som heter</span>
+          <span class="line"><span class="bold">drivhusgasser</span></span>
+        </h2>
+        <div class="white__arrow--yellow">
+          <figure><img src="assets/images/blue/yellow-arrow.svg" alt="Yellow arrow"></figure>
+        </div>
+        <div class="white__bacterias">
+          <figure class="bacteria1"><img src="assets/images/white/bacteria1.svg" alt="Bacteria 1"></figure>
+          <figure class="bacteria2"><img src="assets/images/white/bacteria2.svg" alt="Bacteria 2"></figure>
+          <figure class="bacteria3"><img src="assets/images/white/bacteria3.svg" alt="Bacteria 3"></figure>
+          <figure class="bacteria4"><img src="assets/images/white/bacteria4.svg" alt="Bacteria 4"></figure>
+          <figure class="bacteria5"><img src="assets/images/white/bacteria5.svg" alt="Bacteria 5"></figure>
+        </div>
+        <div class="white__bracket">
+          <figure><img src="assets/images/white/curly-bracket.svg" alt="Curly bracket"></figure>
+        </div>
+        <p class="text text-white1 bold">
+          <span class="line">Drivhusgasser</span>
+          <span class="line">forurenser planeten</span>
+        </p>
+        <ul class="white__list">
+          <li>karbondioksid (CO2)</li>
+          <li>metan (CH4)</li>
+          <li>lystgass (N2O)</li>
+        </ul>
+      </div>
+
+      <div class="pink">
+        <h2 class="subtitle subtitle-pink">
+          <span class="line"><span class="bold"> Klimaendringer</span></span>
+          <span class="line">kan føre til:</span>
+        </h2>
+        <p class="text text-pink1">
+          <span class="line"><span class="bold">Varmere dager</span></span>
+          <span class="line">More hot days can</span>
+          <span class="line">be yucky, and we</span>
+          <span class="line">don't want that</span>
+        </p>
+        <p class="text text-pink2">
+          <span class="line"><span class="bold">Naturproblemer</span></span>
+          <span class="line">Det kan bli tøft</span>
+          <span class="line">for dyr og planter</span>
+          <span class="line">med det skiftende</span>
+          <span class="line">klimaet</span>
+        </p>
+        <p class="text text-pink3">
+          <span class="line"><span class="bold">Mindre mat</span></span>
+          <span class="line"><span class="bold">og vann</span></span>
+          <span class="line">Klimaendringer</span>
+          <span class="line">kan gjøre det</span>
+          <span class="line">vanskelig å dyrke</span>
+          <span class="line">mat og finne rent</span>
+          <span class="line">vann</span>
+        </p>
+        <p class="text text-pink4">
+          <span class="line"><span class="bold">Mennesker og helse</span></span>
+          <span class="line">Varme dager kan gjøre</span>
+          <span class="line">folk syke, og vi trenger</span>
+          <span class="line">å holde oss friske</span>
+        </p>
+        <p class="text text-pink5">
+          <span class="line"><span class="bold">Pengeproblemer</span></span>
+          <span class="line">Klimaproblemer kan</span>
+          <span class="line">koste mye penger å</span>
+          <span class="line">fikse</span>
+        </p>
+        <p class="text text-pink6">
+          <span class="line"><span class="bold">Helsprøtt vær</span></span>
+          <span class="line">Klimaendringer gjør</span>
+          <span class="line">at stormer og skog-</span>
+          <span class="line">branner skjer oftere</span>
+          <span class="line">og blir verre</span>
+        </p>
+        <p class="text text-pink7">
+          <span class="line"><span class="bold">Vannstanden øker</span></span>
+          <span class="line">Issmelting kan gjøre</span>
+          <span class="line">at vannstanden øker</span>
+          <span class="line">og det kan føre til</span>
+          <span class="line">flom</span>
+        </p>
+        <div class="pink__world"> 
+          <figure><img src="assets/images/pink/world.svg" alt="World image"></figure>
+          <figure class="pink__mouth"><img src="assets/images/pink/world-mouth.svg" alt="Mouth"></figure>
+        </div>
+        <div class="pink__thought">
+          <figure><img src="assets/images/pink/thought.svg" alt="Food and water thoughts"></figure>
+        </div>
+        <div class="pink__sun">
+          <figure><img src="assets/images/pink/smiling-sun.svg" alt="Smiling sun"></figure>
+        </div>
+        <div class="pink__sunrays">
+          <figure><img src="assets/images/pink/sun-ray.svg" alt="Sun rays"></figure>
+        </div>
+        <div class="pink__raincloud">
+          <figure><img src="assets/images/pink/raincloud.svg" alt="Sad raincloud"></figure>
+        </div>
+        <div class="pink__coin">
+          <figure><img src="assets/images/pink/flying-coin.svg" alt="Flying coin"></figure>
+        </div>
+        <div class="pink__qr">
+          <figure><img src="assets/images/pink/qr-code.svg" alt="QR code"></figure>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__image">
+          <figure><img src="assets/images/ntnu-logo.svg" alt="NTNU logo"></figure>
+        </div>
+        <span class="footer__divider"></span>
+        <div class="footer__section">
+          <p class="footer__text">Last ned plakat:</p>
+          <a class="" href="https://www.ntnu.no/web/design/digital-barekraft/illustrasjoner" download>
+            https://www.ntnu.no/web/design/digital-barekraft/illustrasjoner</a>
+        </div>
+        <span class="footer__divider"></span>
+        <div class="footer__section">
+          <p class="footer__text">Kontakt: <a href="mailto:example@example.com">carlos.vicient@ntnu.no</a></p>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <!-- <script src="scripts/main.js"></script> -->
+</body>
+
+</html>
