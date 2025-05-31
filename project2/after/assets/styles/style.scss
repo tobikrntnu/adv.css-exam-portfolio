@@ -5,10 +5,10 @@
     --color-green: green;
     --font-header: 'Open sans', sans-serif;
     --font-cursive: 'marydale', cursive;
-    --fs-1: 1.15em;
-    --fs-2: 0.6em;
-    --fs-3: 0.4em;
-    --fs-4: 0.3rem;
+    --fs-1: 1.8em;
+    --fs-2: 0.8em;
+    --fs-3: 0.6em;
+    --fs-4: 0.5em;
 
 }
 
@@ -35,7 +35,9 @@ h1 {
 .line {
     display: block;
 }
-
+.text-bold {
+    font-weight: 1000;
+}
 .text {
     font-family: var(--font-cursive);
     position: absolute;
@@ -43,7 +45,7 @@ h1 {
         font-weight: 1000;
     }
     &1 {
-        top: 9%;
+        top: 10%;
         left: 0;
         width: 50%;
         font-size: var(--fs-3);   
@@ -411,7 +413,7 @@ h1 {
             }
         }
     }
-    & p {
+    &__text {
         color: var(--color-white);
         font-size: var(--fs-3);
     }

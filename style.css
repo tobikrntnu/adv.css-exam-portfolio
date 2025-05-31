@@ -57,6 +57,7 @@ a:hover {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  padding: 0.5em;
 }
 .project__image {
   margin: 0 0.5em 0 0.5em;
