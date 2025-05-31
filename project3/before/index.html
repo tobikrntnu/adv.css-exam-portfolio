@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oblig 3</title>
+    <link rel="stylesheet" href="styles/base/global.css" />
+    <link rel="stylesheet" href="styles/components/scene.css" />
+    <link rel="stylesheet" href="styles/components/button.css" />
+    <script src="styles/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="scene__1">
+      <div class="question-container q1" data-correct-answer="100 billion">
+        <button class="question-button" onclick="showQuestion(this)">?</button>
+        <div class="question hidden">
+          <button class="question-close" onclick="closeQuestion(this)">
+            x
+          </button>
+          <p class="question__text">
+            How many packages are ordered globally every year via the internet?
+          </p>
+          <ul class="question__list">
+            <li class="question__answer">
+              <button onclick="checkAnswer(this)">10 billion</button>
+            </li>
+            <li class="question__answer">
+              <button onclick="checkAnswer(this)">25 billion</button>
+            </li>
+            <li class="question__answer">
+              <button onclick="checkAnswer(this)">50 billion</button>
+            </li>
+            <li class="question__answer">
+              <button onclick="checkAnswer(this)">100 billion</button>
+            </li>
+          </ul>
+          <div class="question__feedback hidden"></div>
+        </div>
+      </div>
+
+      <img src="./styles/images/window-01.svg" alt="Window" class="window" />
+      <img
+        src="./styles/images/woman-ordering-01-01.svg"
+        alt="Woman ordering"
+        class="person-ordering"
+      />
+      <img
+        src="styles/images/package01-01-01.svg"
+        alt="Package"
+        class="package-box"
+      />
+      <p class="package">
+        "E-commerce currently accounts for about 3% of global CO₂ emissions, by
+        2050, emissions from deliveries could grow to 17% of all transport
+        emissions if trends continue."
+      </p>
+    </div>
+
+    <div class="scene__2">
+      <p class="info-box2">
+        "Last-mile delivery — the final step of delivering a package — accounts
+        for up to 50% of a delivery’s total carbon footprint."
+      </p>
+      <div
+        class="question-container q2"
+        data-correct-answer="Limited range for long transport journeys"
+      >
+        <button class="question-button" onclick="showQuestion(this)">?</button>
+        <div class="question hidden">
+          <button class="question-close" onclick="closeQuestion(this)">
+            x
+          </button>
+          <p class="question__text">
+            What are the biggest challenges with electrifying truck
+            transportation?
+          </p>
+          <ul class="question__list">
+            <li class="question__answer">
+              <button onclick="checkAnswer(this)">
+                Limited range for long transport journeys
+              </button>
+            </li>
+            <li class="question__answer">
+              <button onclick="checkAnswer(this)">
+                Too expensive to be economically viable
+              </button>
+            </li>
+            <li class="question__answer">
+              <button onclick="checkAnswer(this)">
+                Not available in large enough scale
+              </button>
+            </li>
+            <li class="question__answer">
+              <button onclick="checkAnswer(this)">
+                Difficult to build enough charging stations
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="question__feedback hidden"></div>
+      </div>
+      <img src="styles/images/post-office.png" alt="" class="post-office" />
+      <div class="road">
+        <div class="trees">
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__1"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__2"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__3"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__4"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__5"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__6"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__7"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__8"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__9"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__10"
+          />
+          <img
+            src="./styles/images/tree-01.svg"
+            alt="tree"
+            class="tree trees__11"
+          />
+        </div>
+        <div class="road__lane-line"></div>
+        <div class="road__side-line-left"></div>
+        <div class="road__side-line-right"></div>
+        <img src="styles/images/truck.svg" alt="truck" class="truck--1" />
+        <img
+          src="styles/images/oil-spill.svg"
+          alt="Oil spill"
+          class="oil-spill"
+        />
+
+        <div class="question-container q3" data-correct-answer="Methane (CH₄)">
+          <button class="question-button" onclick="showQuestion(this)">
+            ?
+          </button>
+          <div class="question hidden">
+            <button class="question-close" onclick="closeQuestion(this)">
+              x
+            </button>
+            <p class="question__text">
+              Which greenhouse gas is often released during oil extraction
+              operations, besides carbon dioxide (CO₂)?
+            </p>
+            <ul class="question__list">
+              <li class="question__answer">
+                <button onclick="checkAnswer(this)">Nitrous oxide (N₂O)</button>
+              </li>
+              <li class="question__answer">
+                <button onclick="checkAnswer(this)">Methane (CH₄)</button>
+              </li>
+              <li class="question__answer">
+                <button onclick="checkAnswer(this)">Ozone (O₃)</button>
+              </li>
+              <li class="question__answer">
+                <button onclick="checkAnswer(this)">
+                  Sulfur dioxide (SO₂)
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="question__feedback hidden"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene__3">
+      <img src="styles/images/cargoplane-01.svg" alt="plane" class="plane" />
+      <p class="info-box3">
+        "Airplanes contribute around 2.5% of global CO₂ emissions, but when you
+        include all climate impacts like contrails, aviation is responsible for
+        about 3.5% of global warming."
+      </p>
+      <p class="info-box4">
+        "A single transatlantic flight emits as much CO₂ as an average person
+        produces in a whole year of driving!"
+      </p>
+      <div class="clouds">
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__1"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__2"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__3"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__4"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__5"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__6"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__7"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__8"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__9"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__10"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__11"
+        />
+        <img
+          src="styles/images/cloud-01.svg"
+          alt="clouds"
+          class="cloud clouds__12"
+        />
+      </div>
+      <div class="airstrip">
+        <div class="airstrip__startlines"></div>
+        <div class="airstrip__light--left"></div>
+      </div>
+      <div class="airstrip__light--right"></div>
+    </div>
+
+    <div class="scene__4">
+      <img src="styles/images/truck.svg" alt="" class="truck--4" />
+      <div class="road--2">
+        <div class="road--2__lane-line"></div>
+        <div class="road--2__side-line-left"></div>
+        <div class="road--2__side-line-right"></div>
+      </div>
+      <p class="info-box5">
+        "By 2030, delivery traffic is expected to grow by 78%, drastically
+        increasing urban CO₂ emissions if no greener solutions are adopted."
+      </p>
+      <img src="styles/images/house-01-01.svg" alt="" class="house--1" />
+    </div>
+    <div class="scene__5">
+      <img src="styles/images/window-01.svg" alt="Window" class="window" />
+      <img src="styles/images/woman-sofa-01.svg" alt="" class="chill-woman" />
+      <img
+        src="styles/images/pink-tshirt-01-01-01.svg"
+        alt=""
+        class="pink-tshirt"
+      />
+      <p class="chill-woman__bubble">
+        Hmmm, i didnt like this color, i will order a new one instead.
+      </p>
+      <p class="tshirt-message">
+        Did you know? Returning a product doubles emissions! It causes extra
+        transport and wasted energy from production.
+      </p>
+    </div>
+  </body>
+</html>
