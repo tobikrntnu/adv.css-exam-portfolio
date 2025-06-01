@@ -1,0 +1,70 @@
+.farming {
+  min-height: 100vh;
+  background: #e6f2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 5vw; // Mer vertikal kontroll
+  text-align: center;
+
+  &__container {
+    max-width: 60ch;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    margin-bottom: 1rem;
+    color: #004a99;
+  }
+
+  &__text {
+    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+  }
+
+  &__illustration {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  &__sprout {
+    display: inline-block;
+    transform-origin: bottom center;
+    opacity: 0;
+    transform: scale(0.3);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+
+    &.active {
+      transform: scale(1);
+      opacity: 1;
+      animation: sway 2s infinite ease-in-out alternate;
+    }
+  }
+
+  &__fact {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    cursor: pointer;
+    color: white;
+    background: #007acc;
+    border-radius: 1em;
+    padding: 0.6em 1em;
+    margin: 0 auto 1em auto;
+    max-width: 20em;
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: scale(1) rotate(-4deg);
+  }
+  100% {
+    transform: scale(1) rotate(4deg);
+  }
+}
+

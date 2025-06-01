@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: $font-stack;
+    background: $background-color;
+    color: $primary-color;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+}

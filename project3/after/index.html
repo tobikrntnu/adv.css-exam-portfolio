@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <title>The journey of a T-shirt</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <section class="intro">
+        <div class="intro__container">
+            <h1 class="intro__title">An important journey</h1>
+            <p class="intro__text">
+                Have you ever considered how much work, resources and 
+                waste go into making a simple t-shirt?
+            </p>
+            <p class="intro__text">
+                Follow along the journey of your clothes!
+            </p>
+            <span class="intro__scroll-hint">
+                Scroll down to begin!
+            </span>
+        </div>
+    </section>
+
+    <section class="farming">
+        <div class="farming__container">
+            <h2 class="farming__title">Where does the fabric come from?</h2>
+            <p class="farming__text">
+                Cotton farming uses a huge amount of water and pesticides, 
+                impacting the environment and local communities!
+            </p>
+            <div class="farming__illustration">
+                <span class="farming__sprout">🌱</span>
+                <span class="farming__sprout">🌱</span>
+                <span class="farming__sprout">🌱</span>
+            </div>
+            <p class="farming__text">
+                Click the buttons for information!
+            </p>
+            <details class="farming__fact">
+                <summary>Water usage 💧</summary>
+                <p>Cotton uses about 20,000 liters of water per kilogram!</p>
+            </details>
+            <details class="farming__fact">
+                <summary>Pesticide impact 🐞</summary>
+                <p>Pesticides are heavily used in cotton farming, impacting local ecosystems.</p>
+            </details>
+        </div>
+    </section>
+
+    <section class="transport">
+        <h2 class="transport__title">How is it transported?</h2>
+        <p class="transport__text">
+            Transporting fabric around the world causes significant CO<sub>2</sub> emissions.
+        </p>
+        <p class="transport__text">
+            Try to click the vehicle to show information! (click again to show new vehicle)
+        </p>
+        <div class="transport__vehicles">
+            <div class="transport__vehicle transport__vehicle--ship" title="Ship">
+                🛳️
+            </div>
+            <div class="transport__vehicle transport__vehicle--truck" title="Truck">
+                🚛
+            </div>
+            <div class="transport__vehicle transport__vehicle--plane" title="Plane">
+                ✈️
+            </div>
+        </div>
+        <div class="transport__info"></div>
+    </section>
+
+    <section class="retail">
+        <h2 class="retail__title">Choose Your T-Shirt Color</h2>
+        <div class="retail__tshirt"></div>
+        <div class="retail__colors">
+            <button class="color-btn" data-color="#ff6347" style="background-color: #ff6347;" aria-label="Red"></button>
+            <button class="color-btn" data-color="#007acc" style="background-color: #007acc;" aria-label="Blue"></button>
+            <button class="color-btn" data-color="#28a745" style="background-color: #28a745;" aria-label="Green"></button>
+            <button class="color-btn" data-color="#f0ad4e" style="background-color: #f0ad4e;" aria-label="Orange"></button>
+            <button class="color-btn" data-color="#6f42c1" style="background-color: #6f42c1;" aria-label="Purple"></button>
+        </div>
+        <button class="retail__button">Buy Now!</button>
+        <p class="retail__message hidden">Thanks for the purchase!</p>
+        <p class="retail__text">
+            Swipe for information!
+        </p>
+    </section>
+    <section class="info-section"> 
+        <h3>Facts about t-shirts and sustainability</h3>
+        <ul>
+            <li>🌊 Producing one T-shirt requires about 2,700 liters of water.</li>
+            <li>🌱 Cotton farming uses a lot of water and pesticides.</li>
+            <li>🚛 Transportation and production account for around 8% of global emissions.</li>
+        </ul>
+        <h3>Tips for smarter clothing choices!</h3>
+        <ul>
+            <li>🧵 Choose quality and wear your clothes longer.</li>
+            <li>🔧 Repair instead of throwing away.</li>
+            <li>🌿 Opt for organic or recycled materials.</li>
+        </ul>
+    </section>
+
+    <section class="end-of-life">
+        <h2 class="end-of-life__title">End of life: What happens with your T-shirt?</h2>
+        <div class="end-of-life__content">
+            <ul>
+                <li>♻️ <strong>Recycle:</strong> Check local textile recycling programs to reduce landfill waste.</li>
+                <li>🤝 <strong>Donate or Sell:</strong> Give your t-shirt a second chance with someone else.</li>
+                <li>🛠️ <strong>Upcycle:</strong> Turn your old shirts into rags, bags, or new creations.</li>
+                <li>🚫 <strong>Avoid Waste:</strong> Don’t throw clothes away — it harms the environment.</li>
+                <li>🌿 <strong>Choose Recyclable Materials:</strong> Natural fibers like organic cotton biodegrade better.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="Avslutning"></section>
+
 </body>
 </html>

@@ -1,0 +1,39 @@
+.end-of-life {
+  background: #f0f4f8;
+  padding: 1em;
+  max-width: 700px;
+  margin: 3em auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+
+  &__title {
+    font-size: 1.5rem;
+    color: #0056b3;
+  }
+
+  &__content {
+    font-size: 1rem;
+    color: #333;
+    
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        line-height: 1.5;
+        font-weight: 500;
+
+        strong {
+          color: #007bff;
+        }
+
+        &::before {
+          display: inline-block;
+          width: 1.5rem;
+          text-align: center;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}

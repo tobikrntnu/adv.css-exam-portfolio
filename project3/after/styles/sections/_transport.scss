@@ -1,0 +1,59 @@
+.transport {
+  min-height: 100vh;
+  background: #fffbe6;
+  padding: 0.5em;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  &__text {
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  &__vehicles {
+    position: relative;
+    height: 6rem;
+  }
+
+  &__vehicle {
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    opacity: 0;
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.5s ease, right 0.7s ease;
+
+    &.active {
+      right: 50%;
+      transform: translateX(50%);
+      opacity: 1;
+    }
+  }
+
+  &__info {
+    font-size: 1.2rem;
+    min-height: 3rem;
+    color: #444;
+    transition: opacity 0.3s ease;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0.5em auto 0 auto;
+    text-align: left;
+    max-width: 30em;
+    li {
+        margin: 0.5em;
+        &:before {
+            content: "•";
+        }
+    }
+  }
+}
