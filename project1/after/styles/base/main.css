@@ -115,7 +115,8 @@ figure, img {
   display: inline-flex;
 }
 .header__navigation .footer__list .footer__item, .footer__navigation .footer__list .footer__item {
-  margin-block-end: var(--margin-small);
+  -webkit-margin-after: var(--margin-small);
+          margin-block-end: var(--margin-small);
 }
 .header__navigation .footer__list .footer__item a, .footer__navigation .footer__list .footer__item a {
   padding: 0.7em;
@@ -258,7 +259,7 @@ stack-l {
   display: block;
   height: auto;
   max-height: 60vh;
-  margin-bottom: var(margin-medium);
+  margin-bottom: var(--margin-medium);
 }
 .features__subtitle {
   text-align: center;
@@ -299,4 +300,5 @@ stack-l {
   text-align: center;
   margin-bottom: var(--margin-medium);
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
