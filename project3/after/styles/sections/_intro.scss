@@ -6,26 +6,26 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2em;
-
+  padding: $padding-xlarge;
   &__container {
-    max-width: 600px;
+    max-width: 50em;
   }
 
+  &__image {
+    height: 8em;
+  }
   &__title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: $font-size1;
+    margin-bottom: $margin-medium;
 
-    opacity: 0;
     transform: translateY(-50px);
     animation: fadeSlideIn 1s forwards ease-out;
   }
 
   &__text {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+    font-size: $font-size3;
+    margin: $margin-medium 0;
 
-    opacity: 0;
     transform: translateY(30px);
     animation: fadeSlideIn 1s forwards ease-out;
     animation-delay: 0.5s;
@@ -34,16 +34,6 @@
   &__scroll-hint {
     opacity: $scroll-hint-opacity;
     animation: pulse 2s infinite;
-  }
-
-  &__illustration {
-    font-size: 5rem;
-    margin-top: 2rem;
-
-    opacity: 0;
-    transform: scale(0.5);
-    animation: scaleIn 1.5s forwards ease-out;
-    animation-delay: 1s;
   }
 }
 

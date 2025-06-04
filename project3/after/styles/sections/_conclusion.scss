@@ -1,0 +1,52 @@
+.conclusion {
+  background: $background-gradient;
+  padding: $padding-xlarge $padding-large;
+  text-align: center;
+  color: $background-color;
+
+  &__container {
+    max-width: 40em;
+    margin: 0 auto;
+  }
+
+  &__header {
+    margin-bottom: $margin-large;
+    font-size: $font-size2;
+    color: $font-color-tertiary;
+  }
+
+  &__text {
+    margin: $margin-medium 0;
+    color: $font-color-primary;
+  }
+
+  &__list {
+    list-style: none;
+    margin: $margin-medium 0;
+    color: $font-color-primary;
+
+    li {
+      margin: $margin-medium 0;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: $margin-large;
+    padding: $padding-medium $padding-large;
+    background-color: $color-button;
+    color: $font-color-secondary;
+    text-decoration: none;
+    border-radius: $border-radius1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font: inherit;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background-color: $color-button-hover;
+      outline: none;
+    }
+  }
+}

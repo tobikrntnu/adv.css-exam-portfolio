@@ -1,37 +1,42 @@
 .end-of-life {
-  background: #f0f4f8;
-  padding: 1em;
-  max-width: 700px;
-  margin: 3em auto;
-  border-radius: 10px;
+  background: $background-color;
+  padding: $padding-large;
+  max-width: 50em;
+  margin: $margin-xlarge auto;
+  border-radius: $border-radius1;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   &__title {
-    font-size: 1.5rem;
-    color: #0056b3;
+    font-size: $font-size2;
+    color: $font-color-tertiary;
+    margin-top: $margin-large;
   }
 
   &__content {
-    font-size: 1rem;
-    color: #333;
+    color: $font-color-primary;
     
     ul {
       list-style: none;
       padding-left: 0;
       li {
-        line-height: 1.5;
-        font-weight: 500;
+        line-height: $line-height;
+        font-weight: $font-weight-bold;
+        padding: $padding-medium;
 
         strong {
-          color: #007bff;
+          color: $font-color-tertiary;
         }
 
         &::before {
           display: inline-block;
-          width: 1.5rem;
+          width: 1em;
           text-align: center;
-          margin-right: 0.5rem;
+          margin-right: $margin-small;
         }
       }
     }

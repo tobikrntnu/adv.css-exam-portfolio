@@ -1,6 +1,36 @@
 
-$font-stack: 'Segoe UI', sans-serif;
-$primary-color: #333;
 $background-color: #f5f5f5;
+$background-color-secondary: #f5f1e6;
 $background-gradient: linear-gradient(to bottom, #ffffff, #e0f7fa);
+
 $scroll-hint-opacity: 0.6;
+
+$padding-xlarge: 2em;
+$padding-large: 1em;
+$padding-medium: 0.5em;
+$padding-small: 0.2em;
+
+$margin-xlarge: 2em;
+$margin-large: 1em;
+$margin-medium: 0.5em;
+$margin-small: 0.2em;
+
+$font-stack: 'Segoe UI', sans-serif;
+$font-size1: clamp(2rem, 4vw, 3rem);
+$font-size2: clamp(1.4rem, 2.2vw, 2rem);
+$font-size3: clamp(1rem, 1.6vw, 1.6rem);
+$font-color-primary: #333333;
+$font-color-secondary: white;
+$font-color-tertiary: #004a99;
+$font-color-green: green;
+$font-weight-bold: 500;
+$line-height: 1.2;
+
+$gap: 1.5rem;
+$emoji-size: clamp(2rem, 8vw, 5rem);
+
+$border-radius1: 1em;
+
+$color-button: #007acc;
+$color-button-hover: #005fa3;
+$color-button-disabled: #999;

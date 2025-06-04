@@ -7,11 +7,11 @@
 html, body {
     font-family: $font-stack;
     background: $background-color;
-    color: $primary-color;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    scroll-behavior: smooth;
 }
 section {
     scroll-snap-align: start;

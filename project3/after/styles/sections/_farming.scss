@@ -1,10 +1,10 @@
 .farming {
   min-height: 100vh;
-  background: #e6f2ff;
+  background: $background-color-secondary;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vh 5vw; // Mer vertikal kontroll
+  padding: $padding-medium;
   text-align: center;
 
   &__container {
@@ -13,24 +13,24 @@
   }
 
   &__title {
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
-    margin-bottom: 1rem;
-    color: #004a99;
+    font-size: $font-size2;
+    margin-bottom: $margin-medium;
+    color: $font-color-tertiary;
   }
 
   &__text {
-    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
-    margin-bottom: 1.2rem;
-    line-height: 1.4;
+    font-size: $font-size3;
+    margin-bottom: $margin-large;
+    line-height: $line-height;
   }
 
   &__illustration {
-    font-size: clamp(2rem, 6vw, 3rem);
-    margin: 1.5rem 0;
+    font-size: $emoji-size;
+    margin: $margin-small 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: $gap;
   }
 
   &__sprout {
@@ -48,13 +48,13 @@
   }
 
   &__fact {
-    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    font-size: $font-size3;
     cursor: pointer;
-    color: white;
-    background: #007acc;
-    border-radius: 1em;
-    padding: 0.6em 1em;
-    margin: 0 auto 1em auto;
+    color: $font-color-secondary;
+    background: $color-button;
+    border-radius: $border-radius1;
+    padding: $padding-medium $padding-large;
+    margin: 0 auto $padding-large auto;
     max-width: 20em;
   }
 }

@@ -1,0 +1,43 @@
+.info-section {
+  margin: $margin-large auto;
+  text-align: left;
+  color: $font-color-primary;
+  padding: $padding-small;
+  border-radius: $border-radius1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(150px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  &.visible {
+    transform: translateX(0);
+  }
+  h3 {
+    font-size: $font-size2;
+    color: $font-color-tertiary;
+    margin: $margin-medium 0 $margin-medium;
+  }
+
+  p {
+    margin-bottom: $margin-large;
+  }
+
+  ul {
+    padding-left: $padding-large;
+    margin-bottom: $margin-large;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: $margin-medium;
+    &:before {
+        content: "•";
+    }
+  }
+}
+@keyframes fadeSlideIn {
+  to {
+    transform: translateX(0);
+  }
+}

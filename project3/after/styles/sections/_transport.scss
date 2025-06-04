@@ -1,27 +1,25 @@
 .transport {
-  min-height: 100vh;
-  background: #fffbe6;
-  padding: 0.5em;
+  background: $background-color-secondary;
+  padding: $padding-medium;
   text-align: center;
 
   &__title {
-    font-size: 2rem;
-    color: #333;
+    font-size: $font-size1;
   }
 
   &__text {
-    margin-bottom: 1em;
-    font-size: 1.2rem;
-    color: #555;
+    margin-bottom: $margin-large;
+    font-size: $font-size3;
+    color: $font-color-primary;
   }
 
   &__vehicles {
     position: relative;
-    height: 6rem;
+    height: 8em;
   }
 
   &__vehicle {
-    font-size: 4rem;
+    font-size: $emoji-size;
     position: absolute;
     top: 0;
     right: -100px;
@@ -38,19 +36,19 @@
   }
 
   &__info {
-    font-size: 1.2rem;
-    min-height: 3rem;
-    color: #444;
+    font-size: $font-size3;
+    min-height: 3em;
+    color: $font-color-primary;
     transition: opacity 0.3s ease;
   }
 
   &__list {
     list-style: none;
-    margin: 0.5em auto 0 auto;
+    margin: $margin-medium auto 0 auto;
     text-align: left;
     max-width: 30em;
     li {
-        margin: 0.5em;
+        margin: $margin-medium;
         &:before {
             content: "•";
         }
