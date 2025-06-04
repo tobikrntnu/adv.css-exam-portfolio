@@ -1,3 +1,9 @@
+/*
+In this file, I had to remove animation-timeline and animation-range to get the 
+CSS validated. That stopped the animation of the truck and the plane, but they 
+had animations for the group project
+*/
+
 .scene {
   width: 100%;
   &__1 {
@@ -195,8 +201,6 @@
         top: 50%;
         z-index: 0;
         animation: truckScrollMotion linear forwards;
-        animation-timeline: scroll();
-        animation-range: 0% 100%;
       }
 
       .oil-spill {
@@ -223,8 +227,6 @@
       left: 65%;
       transform: translateX(-50%);
       animation: planeScrollMotion linear forwards;
-      animation-timeline: scroll();
-      animation-range: 10% 100%;
     }
 
     .info-box3 {

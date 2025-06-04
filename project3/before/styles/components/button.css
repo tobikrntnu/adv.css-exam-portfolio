@@ -43,7 +43,6 @@
 }
 .question-container .question:not(.hidden) {
   opacity: 1;
-  pointer-events: auto;
 }
 .question-container .question-close {
   position: absolute;
@@ -65,7 +64,7 @@
 }
 .question-container .question__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
   gap: 0.5em;
   list-style: none;
   max-width: 90%;
