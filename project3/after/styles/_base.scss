@@ -17,3 +17,50 @@ section {
     scroll-snap-align: start;
     height: 100vh;
 }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    transition-duration: 0s;
+    scroll-behavior: auto;
+  }
+
+  .active {
+    animation: none;
+    transition: none;
+  }
+
+  .farming__sprout {
+    animation: none;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .intro__title,
+  .intro__text,
+  .intro__scroll-hint {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+
+  .transport__vehicle {
+    transition: none;
+    opacity: 1;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .conclusion__button,
+  .retail__button,
+  .modal__close {
+    transition: none;
+  }
+
+  .info-section.visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: none;
+  }
+}
